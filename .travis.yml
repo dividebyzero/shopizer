@@ -16,4 +16,4 @@ jobs:
 
     - stage: build
       script:
-        - mvnw clean install
+        - mvn clean install
