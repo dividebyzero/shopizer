@@ -1,0 +1,19 @@
+language: java
+sudo: false
+
+
+branches:
+  only:
+  - 2.6.0-zero
+
+
+cache:
+  directories:
+  - "$HOME/.m2"
+
+jobs:
+    include: 
+
+    - stage: build
+      script:
+        - mvnw clean install
